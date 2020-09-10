@@ -102,7 +102,7 @@ Answer:
 
     ?>
    <br>
-   <br>
+ 
     <form action="site.php" method="get">
         Color:<input type="text" name="color">
         Plural noun:<input type="text" name="pluralNoun">
@@ -111,8 +111,7 @@ Answer:
     </form> 
 
     <br>
-    <br>
-    
+
     <form action="site.php" method="post">
         Password:<input type="password" name="password">
         
@@ -121,8 +120,6 @@ Answer:
     <?php 
     echo $_POST["password"];?>
 
-    <br>
-    <br>
     <br>
 
     <?php 
@@ -133,8 +130,7 @@ Answer:
     echo count($friends);
     ?>
 <br>
-<br>
-<br>
+
 
 <form action="site.php" method="post">
         Apples:<input type="checkbox" name="fruits[]" value="apples"><br>
@@ -147,5 +143,20 @@ Answer:
     $fruits =$_POST["fruits"];
     echo $fruits[0];
     ?>
+<br>
+
+
+
+<form action="site.php" method='post'>
+<input type="text" name="student">
+<input type="submit">
+</form>
+
+<?php 
+$grades = array("Jim"=>"A+","Pam"=>"B-","Oscar"=>"C+");
+//echo $grades["Jim"];
+echo $grades[$_POST["student"]];
+?>
+
 </body>
 </html>
