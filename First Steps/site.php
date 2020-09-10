@@ -7,7 +7,6 @@
 </head>
 <body>
     <?php 
-
     $characterName = "John";
     $characterAge = 70;
     echo("there once was a man name $characterName<br>");
@@ -17,7 +16,7 @@
     echo("he didnt like being $characterAge<br>");
 
     $phrase = "Giraffe Academy<br>"; //string
-    $age = 30; //number, integer
+    //$age = 30; //number, integer
     $float = 3.7; //decimal
     //difference between 30 and 30.0
     $bool = true;
@@ -61,6 +60,21 @@
     echo round(3.2);
     echo "<br>";
     echo ceil(3.1); //always rounds up; floor
-    ?>
+    echo "<br>";
+
+
+
+    ?> 
+
+    <form action="site.php" method="get">
+        Name:<input type="text" name="Username">
+        Age:<input type="number" name="age">
+        <input type="submit">
+    </form> 
+    Your name is: 
+    <?php
+    echo $_GET["Username"];
+    echo $_GET["age"];
+    ?>  
 </body>
 </html>
