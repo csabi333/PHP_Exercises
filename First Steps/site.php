@@ -31,10 +31,36 @@
     $phrase[0]="B";
     echo "<br>";
     echo str_replace("Biraffe","Panda",$phrase);
+    echo substr($phrase,8,3);    
+    echo "<br>";
+    echo "<br>";
 
-    echo substr($phrase,8,3);
-    
-
+    echo -40.435;
+    echo "<br>";
+    echo 5+9;
+    echo "<br>";
+    echo 10 % 3;//mod
+    echo "<br>";
+    echo 4+ 5*10; // normal operation rules
+    echo "<br>";
+    $num = 10;
+    $num++;
+    echo $num;
+    echo "<br>";
+    $num--;
+    echo $num;
+    $num+=25;
+    //  -= /= *=
+    echo "<br>";
+    echo abs(-4235);
+    echo "<br>";
+    echo pow(2,4);//two to the power four
+    echo "<br>";
+    echo max(2,10);//min
+    echo "<br>";
+    echo round(3.2);
+    echo "<br>";
+    echo ceil(3.1); //always rounds up; floor
     ?>
 </body>
 </html>
