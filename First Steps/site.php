@@ -16,12 +16,25 @@
     echo("he liked the name $characterName<br>");
     echo("he didnt like being $characterAge<br>");
 
-    $phrase = "To be or not to be<br>"; //string
+    $phrase = "Giraffe Academy<br>"; //string
     $age = 30; //number, integer
     $float = 3.7; //decimal
     //difference between 30 and 30.0
     $bool = true;
+
     echo $phrase;
+    echo strtolower($phrase);
+    echo strtoupper($phrase);
+    echo strlen($phrase);
+    echo "<br>";
+    echo $phrase[0];
+    $phrase[0]="B";
+    echo "<br>";
+    echo str_replace("Biraffe","Panda",$phrase);
+
+    echo substr($phrase,8,3);
+    
+
     ?>
 </body>
 </html>
