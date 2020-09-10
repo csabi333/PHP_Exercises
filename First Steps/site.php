@@ -120,5 +120,19 @@ Answer:
     </form> 
     <?php 
     echo $_POST["password"];?>
+
+    <br>
+    <br>
+    <br>
+
+    <?php 
+    $friends = array("kevin","karen","oscar","jim");
+    echo $friends[0];
+    $friends[1]="NEw friend";
+    $friends[4]="anotha one";
+    echo count($friends);
+    ?>
+
+
 </body>
 </html>
