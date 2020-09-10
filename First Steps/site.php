@@ -132,7 +132,20 @@ Answer:
     $friends[4]="anotha one";
     echo count($friends);
     ?>
+<br>
+<br>
+<br>
 
-
+<form action="site.php" method="post">
+        Apples:<input type="checkbox" name="fruits[]" value="apples"><br>
+        oranges:<input type="checkbox" name="fruits[]" value="oranges"><br>
+        pears:<input type="checkbox" name="fruits[]" value="pears"><br>
+        
+        <input type="submit">
+    </form> 
+    <?php 
+    $fruits =$_POST["fruits"];
+    echo $fruits[0];
+    ?>
 </body>
 </html>
