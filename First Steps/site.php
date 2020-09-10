@@ -158,5 +158,17 @@ $grades = array("Jim"=>"A+","Pam"=>"B-","Oscar"=>"C+");
 echo $grades[$_POST["student"]];
 ?>
 
+<br>
+<?php 
+
+    function sayHi($name,$age){
+        echo "Hello $name you are $age<br>";
+    }
+
+    sayHi("tom",235);
+    sayHi("dave",2323);
+    
+?>
+
 </body>
 </html>
