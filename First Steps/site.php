@@ -80,13 +80,34 @@
 <br>
 add these two: <br>
 <form action="site.php" method="get">
-        Name:<input type="number" name="num1"><br>
-        Age:<input type="number" name="num2">
+        <input type="number" name="num1"><br>
+        <input type="number" name="num2">
         <input type="submit">
     </form> 
 Answer:
     <?php 
     echo $_GET["num1"] + $_GET["num2"];
     ?>
+ <br>
+   <br>
+    <?php 
+    
+    $color =$_GET["color"];
+    $pluralNoun =$_GET["pluralNoun"];
+    $celebrity =$_GET["celebrity"];
+
+    echo "Roses are $color ";
+    echo "$pluralNoun are blue ";
+    echo "I love $celeblity ";
+
+    ?>
+   <br>
+   <br>
+    <form action="site.php" method="get">
+        Color:<input type="text" name="color">
+        Plural noun:<input type="text" name="pluralNoun">
+        Celeb:<input type="text" name="celebrity">
+        <input type="submit">
+    </form> 
 </body>
 </html>
