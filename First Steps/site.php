@@ -163,6 +163,7 @@ echo $grades[$_POST["student"]];
 
     function sayHi($name,$age){
         echo "Hello $name you are $age<br>";
+
     }
 
     sayHi("tom",235);
